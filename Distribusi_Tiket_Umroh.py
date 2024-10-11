@@ -1,13 +1,13 @@
 biodata1 = {f'Nama' : 'Endang',
             'Umur' : 59,
             'Pekerjaan' : 'Ibu Rumah Tangga',
-            'Golongan' : 'Miskin',
+            'Golongan' : 'Tidak Mampu',
             'Pendapatan' : 500000
            }
 biodata2 = {f'Nama' : 'Siroh',
             'Umur' : 61,
             'Pekerjaan' : 'Pedagang',
-            'Golongan' : 'Miskin',
+            'Golongan' : 'Tidak Mampu',
             'Pendapatan' : 2500000,
            }
 biodata3 = {f'Nama' : 'Gocip',
@@ -19,13 +19,13 @@ biodata3 = {f'Nama' : 'Gocip',
 biodata4 = {f'Nama' : 'Udin',
             'Umur' : 70,
             'Pekerjaan' : 'Kuli',
-            'Golongan' : 'Miskin',
+            'Golongan' : 'Tidak Mampu',
             'Pendapatan' : 400000,
            }
 biodata5 = {f'Nama' : 'Waridi',
             'Umur' : 75,
             'Pekerjaan' : 'Wiraswasta',
-            'Golongan' : 'Miskin',
+            'Golongan' : 'Tidak Mampu',
             'Pendapatan' : 450000,
             }
 
@@ -36,7 +36,7 @@ golongan = str(input('Masukan Golongan : '))
 pendapatan = int(input('Masukan Jumlah Pendapatan : '))
 mampu = False
 tidak_mampu = True
-pekerjaan_yang_tidak_mendapatkan_bantuan = {'wiraswasta','pedagang','purna pns'}
+pekerjaan_yang_tidak_mendapatkan_bantuan = {'wiraswasta','pedagang','purna_pns'}
 
 if (umur >= 60) and (pekerjaan not in pekerjaan_yang_tidak_mendapatkan_bantuan) and mampu or tidak_mampu and (pendapatan <= 1000000):
     hasil = ('Mendapatkan Distribusi Umroh')
