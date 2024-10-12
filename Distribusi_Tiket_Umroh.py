@@ -38,7 +38,7 @@ mampu = False
 tidak_mampu = True
 pekerjaan_yang_tidak_mendapatkan_bantuan = {'wiraswasta','pedagang','purna_pns'}
 
-if (umur >= 60) and (pekerjaan not in pekerjaan_yang_tidak_mendapatkan_bantuan) and mampu or tidak_mampu and (pendapatan <= 1000000):
+if (umur >= 60) and (pekerjaan not in pekerjaan_yang_tidak_mendapatkan_bantuan) and (mampu or tidak_mampu) and (pendapatan <= 1000000):
     hasil = ('Mendapatkan Distribusi Umroh')
 else:
     hasil = ('Tidak Mendapatkan Distribusi Umroh')
